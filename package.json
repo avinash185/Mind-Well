@@ -1,0 +1,31 @@
+{
+  "name": "mental-health-platform",
+  "version": "1.0.0",
+  "description": "Full-Stack Mental Health & Well-Being Support Platform with Agentic AI",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "install-server": "cd server && npm install",
+    "install-client": "cd client && npm install",
+    "install-all": "npm run install-server && npm run install-client",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start"
+  },
+  "keywords": [
+    "mental-health",
+    "ai",
+    "react",
+    "node",
+    "mongodb"
+  ],
+  "author": "Mental Health Platform Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "docx": "^8.5.0"
+  }
+}
